@@ -6,30 +6,32 @@
 @{
     Categories categories = Model;
 }
-
-<h1>Register Category</h1>
-<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-<form asp-action="Create">
-    <select asp-for="OperationTypeId" class="form-control" required>
-            <option>Select a operation type</option>
-            @foreach(var operationType in categories.OperationTypesList)
-            {
-            <option value="@operationType.Id">@operationType.Description</option>
-            }
-    </select>
-    <span asp-validation-for="OperationTypeId" class="text-danger"> </span>
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <input type="text" autofocus asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"> </span>
+<div class="divContainer">
+    <div class="card bg-dark text-white">
+        <h1 class="title">Register Category</h1>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <select asp-for="OperationTypeId" class="form-control" required>
+                    <option>Select a operation type</option>
+                    @foreach (var operationType in categories.OperationTypesList)
+                    {
+                        <option value="@operationType.Id">@operationType.Description</option>
+                    }
+                </select>
+                <span asp-validation-for="OperationTypeId" class="text-danger"> </span>
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input type="text" autofocus asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"> </span>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+                <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Create</button>
-    <a class="btn btn-secondary"  asp-action="Index">Cancel</a>
-
-
-</form>
+</div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial"/>
+<partial name="_ValidationScriptsPartial" />
 }

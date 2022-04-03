@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -14,11 +15,21 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #141313f5;
 }
+
+header {
+    background-color: #161515;
+}
+
+footer {
+    background-color: #1d1c1c;
+}
+
 .title {
-    text-align: center;
-    color: blue;
+    text-align: start;
+    padding: 16px 16px 0px;
 }
 
 .formCenter{
@@ -28,4 +39,25 @@ body {
 
 .headerSpacer {
     flex: 1 1 auto;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.btnNewAccount {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    font-size: 20px;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

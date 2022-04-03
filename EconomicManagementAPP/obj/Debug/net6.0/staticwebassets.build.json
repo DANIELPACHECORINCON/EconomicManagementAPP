@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9xY1cH4oj8oP/mi07vF4Ko47slo8sg9qdhA6mCBcGq8=",
+  "Hash": "rLJZsH5Zxys5WlzAS1EyKvMhv5WuE2SfPyVPw8+I9lc=",
   "Source": "EconomicManagementAPP",
   "BasePath": "_content/EconomicManagementAPP",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dpachecor\\Desktop\\SemilleroTI\\RepositoriosGit\\.net y c#\\EconomicManagement\\EconomicManagementAPP\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EconomicManagementAPP.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\dpachecor\\Desktop\\SemilleroTI\\RepositoriosGit\\.net y c#\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\css\\AccorddionStyles.css",
-      "SourceId": "EconomicManagementAPP",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dpachecor\\Desktop\\SemilleroTI\\RepositoriosGit\\.net y c#\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\",
-      "BasePath": "_content/EconomicManagementAPP",
-      "RelativePath": "css/AccorddionStyles.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\AccorddionStyles.css"
     },
     {
       "Identity": "C:\\Users\\dpachecor\\Desktop\\SemilleroTI\\RepositoriosGit\\.net y c#\\EconomicManagement\\EconomicManagementAPP\\wwwroot\\css\\site.css",

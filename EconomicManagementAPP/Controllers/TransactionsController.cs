@@ -63,7 +63,6 @@ namespace EconomicManagementAPP.Controllers
                 transactions.CategoryList = await repositorieCategories.GetCategories(UsersController.valorSesion.Id);
                 return View(transactions);
             }
-            Console.WriteLine("hola "+transactions.CategoryId);
             var accounts = await repositorieAccounts.GetAccountById(transactions.AccountId);
 
             if (accounts is null)
@@ -93,6 +92,7 @@ namespace EconomicManagementAPP.Controllers
             {
                 ModelState.AddModelError(nameof(transactions.Total),
                     $"No se pudo realizar la transaccion");
+                transactions.CategoryList = await repositorieCategories.GetCategories(UsersController.valorSesion.Id);
                 return View(transactions);
             }
             return RedirectToAction("Index", "Transactions", new { id = transactions.AccountId});
