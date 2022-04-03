@@ -50,7 +50,7 @@ namespace EconomicManagementAPP.Services
             await connection.ExecuteAsync(@"UPDATE Users
                                             SET StandarEmail = @StandarEmail,
                                              Password = @Password
-                                            WHERE DStatus=1 AND Id = @Id", users);
+                                            WHERE DbStatus=1 AND Id = @Id", users);
         }
 
         //Para actualizar se necesita obtener el tipo de cuenta por el id
