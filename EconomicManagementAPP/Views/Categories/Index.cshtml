@@ -5,9 +5,9 @@
 }
 
 
-<h1>Categories List</h1>
+<h1>Categories</h1>
 
-<a asp-action="Create" class="btn btn-primary mb-3">Create category</a>
+<a asp-action="Create" class="btn btn-success mb-3">New category</a>
 
 <table class="table">
     <thead>
@@ -24,7 +24,6 @@
                 <td>
                     <input type="hidden" value="@categories.Id" class="ids" />
                     <a class="btn btn-primary" asp-action="Modify" asp-route-id="@categories.Id">Modify</a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@categories.Id">Delete</a>
                 </td>
 
                 <td>

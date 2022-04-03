@@ -23,20 +23,6 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        //public async Task<IActionResult> AddFounds(int atId, int id)
-        //{
-        //    var accountType = await repositorieAccountTypes.GetAccountById(atId);
-        //    if (accountType is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-        //    var account = await repositorieAccounts.GetAccountById(id);
-        //    if (account is null)
-        //    {
-        //        return RedirectToAction("NotFound", "Home");
-        //    }
-        //    return View(account);
-        //}
 
 
         public async Task<IActionResult> Create(int id)
@@ -98,11 +84,6 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpPost]
-        //public async Task<ActionResult> AddFounds()
-        //{
-        //    return RedirectToAction("Index", "Home");
-        //}
 
         // Hace que la validacion se active automaticamente desde el front
         [HttpGet]
@@ -134,7 +115,6 @@ namespace EconomicManagementAPP.Controllers
                 return RedirectToAction("NotFound", "Home");
             }
             account.AccountTypeId = atId;
-            Console.WriteLine("lleva al post"+account.AccountTypeId);
             return View(account);
         }
         [HttpPost]
@@ -144,9 +124,7 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(accounts);
             }
-            Console.WriteLine("este es el id de cuenta: " + accounts.Id + "este es el id tipos" + accounts.AccountTypeId);
             var account = await repositorieAccounts.GetAccountById(accounts.Id);
-            Console.WriteLine("este es el id de cuenta: "+account.Id+ "este es el id tipo" + account.AccountTypeId);
             if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");

@@ -29,17 +29,10 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
                             <li class="nav-item">
-                                @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
+                                @*apuntamos al controller asp-controller="Categories" y al view asp-action="Index"*@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
                             </li>
                             <span class="headerSpacer"></span>
-                            @*<li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Delete">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                    </svg>
-                                </a>
-                            </li>*@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" title="Modify" asp-controller="Users" asp-action="Modify">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
@@ -49,7 +42,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
+                                @*apuntamos al controller asp-controller="Users" y al view asp-action="LogOut"*@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="LogOut">Log Out</a>
                             </li>
                         }
@@ -57,11 +50,11 @@
                         {
                             <span class="headerSpacer"></span>
                             <li class="nav-item">
-                                @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
+                                @*apuntamos al controller asp-controller="Users" y al view asp-action="Create"*@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Create">Sign up</a>
                             </li>
                             <li class="nav-item">
-                                @*apuntamos al controller asp-controller="AccountTypes" y al view asp-action="Index"*@
+                                @*apuntamos al controller asp-controller="Users" y al view asp-action="Login"*@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Login">Login</a>
                             </li>
                         }
@@ -80,7 +73,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Developed by Soluciones JLDI
+            &copy; 2022 - Developed by Daniel Pacheco
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

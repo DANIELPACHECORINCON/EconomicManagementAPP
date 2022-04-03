@@ -8,7 +8,7 @@
 
 <h1 class="text-center">Bienvenido <i>@accountAndAccountTypes.UserName</i>!!</h1>
 
-<a asp-controller="AccountTypes" asp-action="Create" class="btn btn-primary mb-3">Create account type</a>
+<a asp-controller="AccountTypes" asp-action="Create" class="btn btn-success mb-3">New account type</a>
 <div class="accordion accordion-flush" id="accordionFlushExample">
     @foreach(var accountTypes in accountAndAccountTypes.AccountTypes){
       <div class="accordion-item">
@@ -21,8 +21,8 @@
           <div class="accordion-body">
               <div class="btnNewAccount">
                 <a class="btn btn-outline-success btnbutton"asp-controller="Accounts" asp-action="Create" asp-route-id="@accountTypes.Id">New account</a>
-                <a class="btn btn-outline-primary btnbutton"asp-controller="AccountTypes" asp-action="Modify" asp-route-id="@(accountTypes.Id)">Modify Type Account</a>
-                <a class="btn btn-outline-danger btnbutton"asp-controller="AccountTypes" asp-action="Delete" asp-route-id="@accountTypes.Id">Delete Type Account</a>
+                <a class="btn btn-outline-primary btnbutton"asp-controller="AccountTypes" asp-action="Modify" asp-route-id="@(accountTypes.Id)">Modify Account Type</a>
+                <a class="btn btn-outline-danger btnbutton"asp-controller="AccountTypes" asp-action="Delete" asp-route-id="@accountTypes.Id">Delete Account Type</a>
               </div>
               <table class="table">
                                 <thead>
@@ -31,7 +31,7 @@
                                         <th >Actions</th>
                                         <th>Name</th>
                                         <th>Balance</th>
-                                        <th>Action</th>
+                                        <th>Actions</th>
                                     </tr>
                                
                     

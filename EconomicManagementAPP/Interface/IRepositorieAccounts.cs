@@ -14,8 +14,5 @@ namespace EconomicManagementAPP.Interface
         Task<int> GetNumberTransaction(int id);
         Task<bool> ExistingAccountTransaction(int Id);
 
-
-
-
     }
 }

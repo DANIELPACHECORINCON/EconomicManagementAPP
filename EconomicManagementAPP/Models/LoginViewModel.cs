@@ -11,6 +11,5 @@ namespace EconomicManagementAPP.Models
         [Required(ErrorMessage = "{0} is required")]
         [DataType(DataType.Password)]
         public string Password { set; get; }
-        public bool sesion { get; set; }
     }
 }

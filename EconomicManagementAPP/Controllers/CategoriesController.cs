@@ -33,10 +33,6 @@ namespace EconomicManagementAPP.Controllers
             {
                 return RedirectToAction("NotFound", "Home");
             }
-            //Categories category = new();
-            //category.OperationTypeId = operation.Id;
-            ////Console.WriteLine(category.OperationTypeId);
-            //var categories = await repositorieCategories.GetCategories(userId);
             return View(categories);
         }
 

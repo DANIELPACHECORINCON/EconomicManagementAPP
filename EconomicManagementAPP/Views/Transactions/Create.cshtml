@@ -10,12 +10,12 @@
 }
 
 
-<h1>New transaction desde @Model.AccountName</h1>
+<h1>New transaction desde: @Model.AccountName</h1>
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 <form asp-action="Create">
     <input type="hidden" asp-for="AccountId" />
     <div class="mb-3">
-        <label asp-for="CategoryId" class="form-label">Categoria</label>
+        <label asp-for="CategoryId" class="form-label">Category</label>
         <select asp-for="CategoryId" class="form-control" required>
             <option>Select a category</option>
             <optgroup label="Income">

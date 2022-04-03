@@ -83,11 +83,9 @@ namespace EconomicManagementAPP.Services
         }
         public async Task<int> GetNumberTransaction(int id)
         {
-            Console.WriteLine(id);
             using var connection = new SqlConnection(connectionString);
             int numberTransaction = await connection.QuerySingleAsync<int>("SELECT COUNT (AccountId) AS CantidadTransaciones FROM Transactions WHERE AccountId = @Id;", new { id });
-            Console.WriteLine(numberTransaction);
-
+            
             return numberTransaction;
         }
         public async Task<bool> ExistingAccountTransaction(int Id)

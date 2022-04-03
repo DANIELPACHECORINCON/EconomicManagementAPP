@@ -35,7 +35,6 @@ namespace EconomicManagementAPP.Services
 
         public async Task<IEnumerable<Categories>> GetCategories(int UserId)
         {
-            //Console.WriteLine(id);
             using var connection = new SqlConnection(connectionString);
             return  await connection.QueryAsync<Categories>(@"SELECT c.Id AS 'Id', c.Name AS 'Name', c.UserId AS 'UserId',c.OperationTypeId, ot.Description AS OperationTypeDescription
 															FROM  Categories AS c 

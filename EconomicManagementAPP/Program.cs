@@ -1,4 +1,4 @@
-using EconomicManagementAPP.Models;
+
 using EconomicManagementAPP.Interface;
 using EconomicManagementAPP.Services;
 
@@ -10,34 +10,9 @@ builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>
 builder.Services.AddTransient<IRepositorieUsers, RepositorieUsers>();
 builder.Services.AddTransient<IRepositorieAccounts, RepositorieAccounts>();
 builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
-//builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
 builder.Services.AddTransient<IRepositorieTransactions, RepositorieTransactions>();
-//builder.Services.AddTransient<SignInManager<Users>>();
-//builder.Services.AddIdentityCore<Users>(options =>
-//{
-//    options.Password.RequireDigit = false;
-//    options.Password.RequireLowercase = false;
-//    options.Password.RequireNonAlphanumeric = false;
-//    options.Password.RequireUppercase = false;
-//});
 
-//builder.Services.AddAuthentication(options =>
-//{
-//    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-//    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-//    options.DefaultSignOutScheme = IdentityConstants.ApplicationScheme;
-//}).AddCookie(IdentityConstants.ApplicationScheme);
-
-//builder.Services.AddDistributedMemoryCache();
-
-//builder.Services.AddSession(options =>
-//{
-//    options.Cookie.Name = ".EconmocManagementAPP.Session";
-//    options.IdleTimeout = TimeSpan.FromSeconds(10);
-//    options.Cookie.HttpOnly = true;
-//    options.Cookie.IsEssential = true;
-//});
 
 
 
@@ -59,7 +34,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 
-//app.UseAuthorization();
 
 
 

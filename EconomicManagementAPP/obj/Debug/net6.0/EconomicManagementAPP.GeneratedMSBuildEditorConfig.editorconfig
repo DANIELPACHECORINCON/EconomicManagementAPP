@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dpachecor\Desktop\SemilleroTI\RepositoriosGit\.net y c#\EconomicManagement\EconomicManagementAPP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Accounts/AddFounds.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQWRkRm91bmRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Accounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,20 +35,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/AccountTypes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/AccountTypes/Modify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXE1vZGlmeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Categories/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Categories/Index.cshtml]
@@ -71,32 +59,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/OperationTypes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uVHlwZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/OperationTypes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uVHlwZXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/OperationTypes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uVHlwZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/OperationTypes/Modify.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uVHlwZXNcTW9kaWZ5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Shared/LinksLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExpbmtzTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -117,10 +81,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dpachecor/Desktop/SemilleroTI/RepositoriosGit/.net y c\#/EconomicManagement/EconomicManagementAPP/Views/Users/Login.cshtml]
