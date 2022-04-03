@@ -63,9 +63,9 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Accounts>(@"
-                                                                SELECT Id, Name, AccountTypeId ,Balance, Description, dbStatus
+                                                                SELECT Id, Name, AccountTypeId ,Balance, Description, DbStatus
                                                                 FROM Accounts
-                                                                WHERE Id = @Id  AND dbStatus=1",
+                                                                WHERE Id = @Id  AND DbStatus=1",
                                                                 new { id });
         }
 

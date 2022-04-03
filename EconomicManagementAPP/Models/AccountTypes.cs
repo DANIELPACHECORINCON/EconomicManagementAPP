@@ -12,7 +12,6 @@ namespace EconomicManagementAPP.Models
         [Remote(action: "VerificaryAccountType", controller: "AccountTypes")]//Activamos la validacion se dispara peticion http hacia el back 
         public string Name { get; set; }
         public int UserId { get; set; }
-        public int OrderAccount { get; set; }
         public int NumberAccount { get; set; }
         public Boolean DbStatus { set; get; }
     }

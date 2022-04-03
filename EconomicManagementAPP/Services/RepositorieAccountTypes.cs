@@ -20,8 +20,8 @@ namespace EconomicManagementAPP.Services
             using var connection = new SqlConnection(connectionString);
             // Requiere el await - tambien requiere el Async al final de la query
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO AccountTypes 
-                                                (Name, UserId, OrderAccount, DbStatus) 
-                                                VALUES (@Name, @UserId, @OrderAccount, @DbStatus); SELECT SCOPE_IDENTITY();", accountTypes);
+                                                (Name, UserId, DbStatus) 
+                                                VALUES (@Name, @UserId, @DbStatus); SELECT SCOPE_IDENTITY();", accountTypes);
             accountTypes.Id = id;
             return accountTypes.Id;
         }
@@ -43,7 +43,7 @@ namespace EconomicManagementAPP.Services
         public async Task<IEnumerable<AccountTypes>> GetAccountsTypes(int UserId)
         {
             using var connection = new SqlConnection(connectionString);
-            return await connection.QueryAsync<AccountTypes>(@"SELECT  [at].Id ,[at].[Name] AS 'Name' , UserId, OrderAccount
+            return await connection.QueryAsync<AccountTypes>(@"SELECT  [at].Id ,[at].[Name] AS 'Name' , UserId
                                                              FROM AccountTypes AS [at]
                                                              JOIN Users AS u
                                                              ON u.Id=[at].UserId
@@ -63,7 +63,7 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<AccountTypes>(@"
-                                                                SELECT [at].Id, Name, UserId, OrderAccount
+                                                                SELECT [at].Id, Name, UserId
                                                                 FROM AccountTypes AS [at]
                                                                 JOIN Users AS u
                                                                 ON u.Id=[at].UserId

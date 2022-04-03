@@ -22,7 +22,6 @@ CREATE TABLE [AccountTypes](
 	[Name] [nvarchar](50) NOT NULL,
 	[UserId] [int] NOT NULL,
 	[DbStatus] [bit] NOT NULL,
-	[OrderAccount] [int] NOT NULL,
 	CONSTRAINT [FK_AccountTypesUsers] FOREIGN KEY (UserId) REFERENCES Users(Id)
 )
 GO

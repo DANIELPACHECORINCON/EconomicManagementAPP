@@ -70,8 +70,14 @@ namespace EconomicManagementAPP.Controllers
                 return RedirectToAction("NotFound", "Home");
             }
 
-           
+            transactions.Money = (transactions.Money is null) ? "0" : transactions.Money.ToString().Replace(".", ",");
 
+            if (!Decimal.TryParse(transactions.Money.ToString(), out Decimal newTotal))
+            {
+                ModelState.AddModelError(nameof(transactions.Money),
+                    $"The value {transactions.Money} is not valid in controller.");
+            }
+            transactions.Total = newTotal;
             transactions.UserId = UsersController.valorSesion.Id;
             transactions.TransactionDate = DateTime.Now;
                        

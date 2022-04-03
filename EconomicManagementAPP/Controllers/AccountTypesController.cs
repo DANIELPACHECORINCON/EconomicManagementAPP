@@ -44,7 +44,6 @@ namespace EconomicManagementAPP.Controllers
             }
 
             accountTypes.UserId = UsersController.valorSesion.Id; ;
-            accountTypes.OrderAccount = 1;
 
             // Validamos si ya existe antes de registrar
             var accountTypeExist =

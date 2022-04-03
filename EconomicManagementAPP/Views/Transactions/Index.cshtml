@@ -14,8 +14,8 @@
     @foreach (var transaction in Model)
     {
         <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-heading@(transaction.Id)">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse@(transaction.Id)" aria-expanded="false" aria-controls="flush-collapse@(transaction.Id)">
+            <h2 class="accordion-header bg-dark" id="flush-heading@(transaction.Id)">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse@(transaction.Id)" aria-expanded="false" aria-controls="flush-collapse@(transaction.Id)">
                     @if (@transaction.Description is not null)
                     {
                         @transaction.Description
@@ -27,8 +27,8 @@
                 </button>
             </h2>
             <div id="flush-collapse@(transaction.Id)" class="accordion-collapse collapse" aria-labelledby="flush-heading@(transaction.Id)" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <table class="table">
+                <div class="accordion-body bg-dark">
+                    <table class="table text-white">
                         <thead>
 
                             <tr>

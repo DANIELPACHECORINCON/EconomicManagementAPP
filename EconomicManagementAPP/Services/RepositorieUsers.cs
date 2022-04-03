@@ -37,7 +37,7 @@ namespace EconomicManagementAPP.Services
         public async Task<Users> Login(string email, string password)
         {
             using var connection = new  SqlConnection(connectionString);
-            return await connection.QueryFirstOrDefaultAsync<Users>("SELECT * FROM Users WHERE Email = @email AND Password = @password AND dbStatus=1", 
+            return await connection.QueryFirstOrDefaultAsync<Users>("SELECT * FROM Users WHERE Email = @email AND Password = @password AND DbStatus=1", 
                                                                     new { email, password });
 
         }
@@ -50,7 +50,7 @@ namespace EconomicManagementAPP.Services
             await connection.ExecuteAsync(@"UPDATE Users
                                             SET StandarEmail = @StandarEmail,
                                              Password = @Password
-                                            WHERE dStatus=1 AND Id = @Id", users);
+                                            WHERE DStatus=1 AND Id = @Id", users);
         }
 
         //Para actualizar se necesita obtener el tipo de cuenta por el id
@@ -60,13 +60,13 @@ namespace EconomicManagementAPP.Services
             return await connection.QueryFirstOrDefaultAsync<Users>(@"
                                                                 SELECT Id, Email, StandarEmail, Password
                                                                 FROM Users
-                                                                WHERE Id = @Id AND dbStatus=1",
+                                                                WHERE Id = @Id AND DbStatus=1",
                                                                 new { id });
         }
         public async Task Delete(int id)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync("UPDATE Users SET dbStatus=0  WHERE Id = @Id", new { id });
+            await connection.ExecuteAsync("UPDATE Users SET DbStatus=0  WHERE Id = @Id", new { id });
         }
 
     }

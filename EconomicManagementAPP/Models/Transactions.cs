@@ -10,6 +10,8 @@ namespace EconomicManagementAPP.Models
         public int UserId { get; set; }
         public DateTime TransactionDate { get; set; }
         [MinZero]
+        public string Money { get; set; }
+        [MinZero]
         public decimal Total { get; set; }
         public string Description { get; set; }
         public int AccountId { get; set; }

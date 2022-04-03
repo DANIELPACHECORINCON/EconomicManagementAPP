@@ -82,7 +82,7 @@ namespace EconomicManagementAPP.Controllers
 
                 return View(users);
             }
-            users.dbStatus = true;
+            users.DbStatus = true;
             await repositorieUsers.Create(users);
             if(users.Id.ToString() is null)
             {
@@ -163,7 +163,7 @@ namespace EconomicManagementAPP.Controllers
 
             await repositorieUsers.Delete(id);
             LogOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login");
         }
         public IActionResult LogOut()
         {
